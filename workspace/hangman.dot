@@ -38,7 +38,7 @@
       {{~}}
     </p>
 
-    <p>Number of words: {{=it.numberOfWords}}</p>
+    <p>Number of words: {{=it.numWords}}</p>
 
     <p>Word <span>{{=it.word}}</span><p>
     <p>Number of letters: {{=it.numberOfLetters}}</p>
@@ -58,12 +58,6 @@
     {{~it.lettersNotInWord :letter:letterIndex}}
       <span>{{=letter}}{{?letterIndex < it.numberOfLettersNotInWord - 1}},{{?}}</span>
     {{~}}
-    </p>
-    <p>
-      {{~it.alphabet :letter:letterIndex}}
-      <input id="alph-letter-{{=letter}}" type="checkbox">
-      <label for="alph-letter-{{=letter}}">{{=letter}}</label>
-      {{~}}
     </p>
   </div>
 </body>
